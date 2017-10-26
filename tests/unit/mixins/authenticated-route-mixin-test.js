@@ -90,7 +90,7 @@ describe('AuthenticatedRouteMixin', () => {
       });
 
       it('sets the redirectTarget cookie in fastboot', function() {
-        fastbootMock.get.withArgs('request.protocol').returns('https');
+        fastbootMock.get.withArgs('request.protocol').returns('https:');
 
         let cookieName = 'ember_simple_auth-redirectTarget';
 

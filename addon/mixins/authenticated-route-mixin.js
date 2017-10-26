@@ -86,7 +86,7 @@ export default Mixin.create({
 
         cookies.write('ember_simple_auth-redirectTarget', transition.intent.url, {
           path: '/',
-          secure: fastboot.get('request.protocol') === 'https'
+          secure: fastboot.get('request.protocol') === 'https:'
         });
       } else {
         this.set('session.attemptedTransition', transition);
